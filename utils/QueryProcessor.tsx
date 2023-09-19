@@ -1,4 +1,9 @@
 export default function QueryProcessor(query: string): string {
+  if (query.toLowerCase().includes("what is your name")) {
+    return (
+      "My name is Swati"
+    ); 
+  }
   if (query.toLowerCase().includes("andrew")){
     return (
       "Andrew ID is your cmu ID"
